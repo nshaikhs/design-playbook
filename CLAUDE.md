@@ -1,6 +1,6 @@
 # Design Playbook — Claude Instructions
 
-You have 15 design skills installed. Use them. Don't guess at design decisions when you have a searchable database of 300+ rules, 161 palettes, 57 font pairings, and 69 real-world design systems available.
+You have 15 design skills installed. Use them. Don't guess at design decisions when you have a searchable database of 300+ rules, 161 palettes, 57 font pairings, and 59 real-world design systems available.
 
 ---
 
@@ -68,9 +68,9 @@ python3 ~/.claude/skills/ui-ux-pro-max/scripts/search.py "glassmorphism dark" --
 
 ---
 
-## 69 Real-World Design Systems
+## 59 Real-World Design Systems
 
-You have DESIGN.md files from 69 companies in `~/.claude/skills/design-systems/`. These are plain-text design systems you can read and implement.
+You have DESIGN.md files from 59 companies in `~/.claude/skills/design-systems/`. These are plain-text design systems you can read and implement.
 
 When a user says "make it look like Stripe" or "I want a Linear-style dashboard":
 1. Read the company's DESIGN.md: `~/.claude/skills/design-systems/stripe/README.md`
