@@ -35,25 +35,37 @@ Each one is a `DESIGN.md` file — a plain-text design system that Claude reads 
 
 The included `design-style-template.md` teaches Claude your aesthetic preferences — colors, fonts, animation rules, spacing, inspiration sources. Claude reads it at the start of every session so your output stays consistent.
 
-## Install
+## Install (Zero Effort)
 
-```bash
-git clone https://github.com/nshaikhs/design-playbook.git
-cd design-playbook
-bash install.sh
+Open Claude Code, paste this, hit enter. Claude does the rest:
+
+```
+I just got access to a design playbook for Claude Code. Please set it up for me. Here's what to do:
+
+1. Clone the repo: `git clone https://github.com/nshaikhs/design-playbook.git ~/design-playbook`
+2. Run the installer: `bash ~/design-playbook/install.sh`
+3. Copy the design style template into my Claude memory so you read it every session: `mkdir -p ~/.claude/memory && cp ~/design-playbook/design-style-template.md ~/.claude/memory/design-style.md`
+4. After install, verify the skills are there by listing what's in `~/.claude/skills/` and confirming the design skills show up
+5. Then give me a quick tour of what I now have — what each skill does, when to use it, and show me 5 example prompts I can try right now to test the design skills
 ```
 
-This copies all 15 skills into `~/.claude/skills/`. Takes about 5 seconds.
+That's it. Claude will clone the repo, install 15 design skills, set up your style config, and walk you through everything.
+
+### Manual Install (if you prefer)
+
+```bash
+git clone https://github.com/nshaikhs/design-playbook.git ~/design-playbook
+cd ~/design-playbook
+bash install.sh
+mkdir -p ~/.claude/memory
+cp design-style-template.md ~/.claude/memory/design-style.md
+```
 
 ### Set Up Your Personal Style
 
-1. Copy the template:
-   ```bash
-   mkdir -p ~/.claude/memory
-   cp design-style-template.md ~/.claude/memory/design-style.md
-   ```
-2. Edit `~/.claude/memory/design-style.md` with your own preferences
-3. Claude reads it automatically every session
+1. Edit `~/.claude/memory/design-style.md` with your own color, font, and animation preferences
+2. Claude reads it automatically at the start of every session
+3. Your output will stay consistent across projects without repeating yourself
 
 ## How to Use
 
