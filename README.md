@@ -2,14 +2,36 @@
 
 Turn Claude Code into a design department. 15 skills, 69 real-world design systems, and a personal style engine — all installed in one command.
 
-## What This Gives You
+## The Star: UI/UX Pro Max
 
-### 15 Design Skills
+This is the main skill and the reason this package exists. It's a complete design intelligence system that gives Claude:
+
+- **50+ UI styles** — glassmorphism, minimalism, brutalism, neumorphism, bento grid, dark mode, and more
+- **161 color palettes** — organized by industry (fintech, healthcare, SaaS, luxury, etc.)
+- **57 font pairings** — matched by personality (elegant, bold, playful, technical)
+- **99 UX guidelines** — prioritized by severity (CRITICAL, HIGH, MEDIUM, LOW)
+- **300+ design rules** — accessibility, touch targets, animation timing, layout, forms, navigation, charts
+- **A searchable CLI** — generate a complete design system for any project in one command
+- **Pre-delivery checklists** — so nothing ships looking unprofessional
+
+Without this skill, Claude guesses at design. With it, Claude searches a database of real design standards and makes informed decisions. It's the difference between "AI slop" and output that looks like a real designer made it.
+
+### What it looks like in practice
+
+```
+> "Build me a landing page for a fitness app"
+
+Claude (without this skill): generic layout, random colors, looks like every other AI page
+Claude (with this skill): searches 161 palettes for fitness/health, picks a style that 
+matches, applies 99 UX rules, checks accessibility, uses proper animation timing
+```
+
+## All 15 Skills
 
 | Skill | What It Does |
 |-------|-------------|
-| `/frontend-design` | Build production-grade UIs that don't look like generic AI output |
-| `/ui-ux-pro-max` | 50+ design styles, 161 color palettes, 57 font pairings, 99 UX guidelines |
+| `/ui-ux-pro-max` | **The brain** — 300+ design rules, 161 palettes, 57 font combos, design system generator |
+| `/frontend-design` | **The builder** — production-grade UIs that don't look like generic AI output |
 | `/ui-styling` | shadcn/ui + Tailwind — themes, dark mode, accessibility, responsive |
 | `/design-system` | Token architecture (primitive > semantic > component), CSS variables |
 | `/design` | Full brand identity — logos, banners, slides, icons, social graphics |
@@ -23,7 +45,11 @@ Turn Claude Code into a design department. 15 skills, 69 real-world design syste
 | `/excalidraw-diagrams` | Architecture diagrams, flowcharts, decision trees |
 | `/algorithmic-art` | Generative art using p5.js with seeded randomness |
 
-### 69 Real-World Design Systems
+### How they work together
+
+**ui-ux-pro-max** is the brain — it plans the design, picks colors/fonts/styles, and reviews quality. **frontend-design** is the builder — it writes the actual code. The other skills are specialists for specific outputs (logos, banners, slides, art). Think of it as: Pro Max decides *what* to build, frontend-design *builds* it.
+
+## 69 Real-World Design Systems
 
 Drop any of these into your project and tell Claude "build a page that looks like this":
 
@@ -44,10 +70,13 @@ I just got access to a design playbook for Claude Code. Please set it up for me.
 
 1. Clone the repo: `git clone https://github.com/nshaikhs/design-playbook.git ~/design-playbook`
 2. Run the installer: `bash ~/design-playbook/install.sh`
-3. Copy the design style template into my Claude memory so you read it every session: `mkdir -p ~/.claude/memory && cp ~/design-playbook/design-style-template.md ~/.claude/memory/design-style.md`
-4. After install, verify the skills are there by listing what's in `~/.claude/skills/` and confirming the design skills show up
-5. Then give me a quick tour of what I now have — what each skill does, when to use it, and show me 5 example prompts I can try right now to test the design skills
+3. Copy the CLAUDE.md instructions into my global Claude config so you always know how to use the design skills: `cp ~/design-playbook/CLAUDE.md ~/.claude/CLAUDE.md` — if a CLAUDE.md already exists there, append the contents instead of overwriting
+4. Copy the design style template into my Claude memory so you read it every session: `mkdir -p ~/.claude/memory && cp ~/design-playbook/design-style-template.md ~/.claude/memory/design-style.md`
+5. After install, verify everything by listing `~/.claude/skills/` and confirming the 15 design skills are there
+6. Then read the CLAUDE.md you just installed and give me a tour of what I now have. I especially want to understand what ui-ux-pro-max does (the main skill), how to use the 69 design systems, and show me 5 example prompts I can try right now
 ```
+
+The CLAUDE.md is the key — it teaches Claude *how* to use the skills, when to reach for each one, and makes ui-ux-pro-max the default starting point for any design work.
 
 That's it. Claude will clone the repo, install 15 design skills, set up your style config, and walk you through everything.
 
